@@ -6,7 +6,8 @@
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts",
-    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write"
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "test": "mocha -r ts-node/register tests/**/*.spec.ts"
   },
   "repository": "git@github.com:Wumpus-Friends/Buddy.ts.git",
   "author": "Nolway <faizeau.alexis@gmail.com>",
@@ -20,10 +21,15 @@
     "reflect-metadata": "^0.1.13"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.22",
+    "@types/mocha": "^9.0.0",
     "@types/node": "^16.10.2",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
+    "chai": "^4.3.4",
     "eslint": "^7.32.0",
+    "mocha": "^9.1.2",
+    "ts-node": "^10.2.1",
     "typescript": "^4.4.3"
   }
 }
