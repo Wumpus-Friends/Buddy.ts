@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "description": "Simple Discord bot framework",
   "main": "build/client.js",
+  "bin": {
+    "buddy": "./build/cli/cli.js"
+  },
   "scripts": {
     "build": "tsc",
     "lint": "eslint . --ext .ts",
@@ -11,19 +14,21 @@
   },
   "repository": "git@github.com:Wumpus-Friends/Buddy.ts.git",
   "author": "Nolway <faizeau.alexis@gmail.com>",
-  "license": "GNU",
+  "license": "GPL-3.0",
   "dependencies": {
     "discord.js": "^13.1.0",
     "discordx": "^6.0.5",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.4.1",
-    "reflect-metadata": "^0.1.13"
+    "reflect-metadata": "^0.1.13",
+    "yargs": "^17.2.1"
   },
   "devDependencies": {
     "@types/chai": "^4.2.22",
     "@types/mocha": "^9.0.0",
     "@types/node": "^16.10.2",
+    "@types/yargs": "^17.0.3",
     "@typescript-eslint/eslint-plugin": "^4.33.0",
     "@typescript-eslint/parser": "^4.33.0",
     "chai": "^4.3.4",
